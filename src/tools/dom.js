@@ -6,7 +6,7 @@ import { log } from './log'
  * @returns {HTMLElement}
  **/
 export const $ = (selector, context) => {
-  return (context || document).querySelector(selector)
+  return (context ?? document).querySelector(selector)
 }
 
 /**
@@ -15,7 +15,7 @@ export const $ = (selector, context) => {
  * @returns {HTMLElement[]}
  **/
 export const $$ = (selector, context) => {
-  return (context || document).querySelectorAll(selector)
+  return (context ?? document).querySelectorAll(selector)
 }
 
 /**
