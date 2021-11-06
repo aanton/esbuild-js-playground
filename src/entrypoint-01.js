@@ -1,4 +1,5 @@
 import { $, wait$ } from './tools/dom'
+import { log } from './tools/log'
 import { wait } from './tools/wait'
 
 wait(1000).then(() => {
@@ -7,5 +8,7 @@ wait(1000).then(() => {
 })
 
 wait$('body.loaded').then((element) => {
-  element.style.backgroundColor = 'tomato'
+  const color = 'tomato'
+  element.style.backgroundColor = color
+  log(`Background color changed to ${color}`)
 })
