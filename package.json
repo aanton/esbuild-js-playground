@@ -1,0 +1,27 @@
+{
+  "name": "esbuild-js-demo",
+  "version": "1.0.0",
+  "description": "Playground JavaScript project using esbuild",
+  "private": "true",
+  "scripts": {
+    "build": "esbuild --bundle --outdir=public src/*.js",
+    "build:watch": "npm run build -- --watch",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.13.12"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "ignorePatterns": [
+      "public/*"
+    ]
+  }
+}
