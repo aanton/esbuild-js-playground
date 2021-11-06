@@ -7,8 +7,9 @@ wait(1000).then(() => {
   body.classList.add('loaded')
 })
 
-wait$('body.loaded').then((element) => {
+;(async function () {
+  const element = await wait$('body.loaded')
   const color = 'tomato'
   element.style.backgroundColor = color
   log(`Background color changed to ${color}`)
-})
+})()

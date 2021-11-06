@@ -12,6 +12,7 @@ const build = (files) => {
     minify: args.minify === true,
     outdir: outDirectory,
     sourcemap: args.sourcemap === true,
+    target: 'es2015',
     watch: args.watch === true
   })
 }
