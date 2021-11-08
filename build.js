@@ -7,6 +7,9 @@ const outDirectory = 'public'
 const build = (files) => {
   esbuild.build({
     entryPoints: files,
+    banner: {
+      js: '"use strict";'
+    },
     bundle: true,
     logLevel: 'info',
     minify: args.minify === true,
