@@ -10,6 +10,7 @@ const build = (files) => {
     bundle: true,
     logLevel: 'info',
     minify: args.minify === true,
+    outbase: 'src',
     outdir: outDirectory,
     sourcemap: args.sourcemap === true,
     target: 'es2015',
