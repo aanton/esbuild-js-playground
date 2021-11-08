@@ -12,10 +12,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "esbuild": "^0.13.12"
-  },
   "devDependencies": {
+    "esbuild": "^0.13.12",
     "glob": "^7.2.0",
     "minimist": "^1.2.5",
     "servor": "^4.0.2",
