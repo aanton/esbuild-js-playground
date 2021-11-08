@@ -5,6 +5,7 @@
   "private": "true",
   "scripts": {
     "build": "node build.js --minify",
+    "clean": "rm public/*.js",
     "dev": "node build.js --watch --server",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
