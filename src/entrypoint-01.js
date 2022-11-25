@@ -1,5 +1,6 @@
 import { $, wait$ } from './tools/dom'
 import { log } from './tools/log'
+import Timer from './tools/Timer'
 import { wait } from './tools/wait'
 
 wait(1000).then(() => {
@@ -13,3 +14,5 @@ wait(1000).then(() => {
   element.style.backgroundColor = color
   log(`Background color changed to ${color}`)
 })()
+
+new Timer().start()
