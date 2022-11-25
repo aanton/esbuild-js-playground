@@ -4,6 +4,7 @@
   "description": "Playground JavaScript project using esbuild",
   "private": "true",
   "scripts": {
+    "build:dev": "node build.js",
     "build": "node build.js --minify",
     "clean": "rm public/*.js",
     "dev": "node build.js --watch --server",
